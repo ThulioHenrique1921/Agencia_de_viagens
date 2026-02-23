@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agência de viagens</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <img src="img/local-logo.png" alt="">
+        <h1>Agência de Viagens</h1>
+    </header>
+    <main>      
+        <section>
+            <div class="container-form">
+                <div class="topo-form">
+                    <img src="img/aviao.png" alt="">
+                    <h2>Solicite um orçamento</h2>
+                </div>
+                <h2>Informe seus dados</h2>
+                    <form method="post" action="">
+                        <div class="container_dados_pessoais">
+                            <label for="nome">Nome</label>
+                            <input type="text" name="nome" id="nome" placeholder="Nome completo">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" placeholder="Email para contato">
+                            <label for="celular">Celular</label>
+                            <input type="tel" name="celular" id="celular" placeholder="(XX) XXXXX-XXXX">
+                        </div>
+                        <div class="container_datas">
+                            <div>
+                                <label for="data_ida">Data de ida</label>
+                                <input type="date" name="data_ida" id="data_ida" placeholder="dd/mm/aaaa">
+                            </div>
+                             <div>
+                                <label for="data_volta">Data de volta</label>
+                                <input type="date" name="data_volta" id="data_volta" placeholder="dd/mm/aaaa">
+                            </div>
+                        </div>
+                        <div class="container_destino">
+                            <div>
+                                <label for="origem">Destino</label>
+                                <select name="origem" id="origem" >
+                                    <optgroup label="Região Norte">
+                                        <option value="Acre">Acre (AC): Rio Branco</option>
+                                        <option value="Amapa">Amapá (AP): Macapá</option>
+                                        <option value="Amazonas">Amazonas (AM): Manaus</option>
+                                        <option value="Para">Pará (PA): Belém</option>
+                                        <option value="Rondonia">Rondônia (RO): Porto Velho</option>
+                                        <option value="Roraima">Roraima (RR): Boa Vista</option>
+                                        <option value="Tocantins">Tocantins (TO): Palmas </option>
+                                    </optgroup>
+                                    <optgroup label="Região Nordeste">
+                                        <option value="Alagoas">Alagoas (AL): Maceió</option>
+                                        <option value="Bahia">Bahia (BA): Salvador</option>
+                                        <option value="Ceara">Ceará (CE): Fortaleza</option>
+                                        <option value="Maranhao">Maranhão (MA): São Luís</option>
+                                        <option value="Paraiba">Paraíba (PB): João Pessoa</option>
+                                        <option value="Pernambuco">Pernambuco (PE): Recife</option>
+                                        <option value="Piauí">Piauí (PI): Teresina</option>
+                                        <option value="Rio_Grande_do_Norte">Rio Grande do Norte (RN): Natal</option>
+                                        <option value="Sergipe">Sergipe (SE): Aracaju </option>
+                                    </optgroup>
+                                    <optgroup label="Região Centro-Oeste">
+                                        <option value="Distrito_federal">Distrito Federal (DF): Brasília</option>
+                                        <option value="Goias">Goiás (GO): Goiânia</option>
+                                        <option value="Mato_grosso">Mato Grosso (MT): Cuiabá</option>
+                                        <option value="Mato_grosso_do_Sul">Mato Grosso do Sul (MS): Campo Grande</option>
+                                    </optgroup>
+                                    <optgroup label="Região Sudeste">
+                                        <option value="Espírito_santo">Espírito Santo (ES): Vitória</option>
+                                        <option value="Minas_gerais">Minas Gerais (MG): Belo Horizonte</option>
+                                        <option value="Rio_de_janeiro">Rio de Janeiro (RJ): Rio de Janeiro</option>
+                                        <option value="Sao_paulo">São Paulo (SP): São Paulo</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="origem">Destino</label>
+                                <select name="origem" id="origem" >
+                                    <optgroup label="Região Norte">
+                                        <option value="Acre">Acre (AC): Rio Branco</option>
+                                        <option value="Amapa">Amapá (AP): Macapá</option>
+                                        <option value="Amazonas">Amazonas (AM): Manaus</option>
+                                        <option value="Para">Pará (PA): Belém</option>
+                                        <option value="Rondonia">Rondônia (RO): Porto Velho</option>
+                                        <option value="Roraima">Roraima (RR): Boa Vista</option>
+                                        <option value="Tocantins">Tocantins (TO): Palmas </option>
+                                    </optgroup>
+                                    <optgroup label="Região Nordeste">
+                                        <option value="Alagoas">Alagoas (AL): Maceió</option>
+                                        <option value="Bahia">Bahia (BA): Salvador</option>
+                                        <option value="Ceara">Ceará (CE): Fortaleza</option>
+                                        <option value="Maranhao">Maranhão (MA): São Luís</option>
+                                        <option value="Paraiba">Paraíba (PB): João Pessoa</option>
+                                        <option value="Pernambuco">Pernambuco (PE): Recife</option>
+                                        <option value="Piauí">Piauí (PI): Teresina</option>
+                                        <option value="Rio_Grande_do_Norte">Rio Grande do Norte (RN): Natal</option>
+                                        <option value="Sergipe">Sergipe (SE): Aracaju </option>
+                                    </optgroup>
+                                    <optgroup label="Região Centro-Oeste">
+                                        <option value="Distrito_federal">Distrito Federal (DF): Brasília</option>
+                                        <option value="Goias">Goiás (GO): Goiânia</option>
+                                        <option value="Mato_grosso">Mato Grosso (MT): Cuiabá</option>
+                                        <option value="Mato_grosso_do_Sul">Mato Grosso do Sul (MS): Campo Grande</option>
+                                    </optgroup>
+                                    <optgroup label="Região Sudeste">
+                                        <option value="Espírito_santo">Espírito Santo (ES): Vitória</option>
+                                        <option value="Minas_gerais">Minas Gerais (MG): Belo Horizonte</option>
+                                        <option value="Rio_de_janeiro">Rio de Janeiro (RJ): Rio de Janeiro</option>
+                                        <option value="Sao_paulo">São Paulo (SP): São Paulo</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="contianer_radio">
+                            <label for="">Quarto com cama infantil?</label>
+                            <input type="radio" name="cama_infantil" id="cama_infantil" value="sim">
+                            <label for="cama_infantil">Sim</label>
+                            <input type="radio" name="cama_infantil" id="cama_infantil" value="nao">
+                            <label for="cama_infantil">Não</label>
+                        </div>
+                        <div class="contianer_checkbox">
+                            <label for="">Preferências da hospedagem</label>
+                            <input type="checkbox" name="" id="">
+                            <label for="">Piscina</label>
+                            <input type="checkbox" name="" id="">
+                            <label for="">Wi-fi</label>
+                            <input type="checkbox" name="" id="">
+                            <label for="">Garagem</label>
+                            <input type="checkbox" name="" id="">
+                            <label for="">Suite</label>
+                        </div>
+                        <button type="submit">Solicitar orçamento</button>
+                    </form>
+            </div>
+        </section>
+        <section>
+            <div class="container-titulos">
+                <h2>Ofertas</h2>
+                <h3>Ofertas com até 50% de desconto</h3>
+            </div>
+            <div class="contianer_ofertas">
+                <div class="container-cards-50">
+                    <legend>Rio de janeiro</legend>
+                </div>
+                <div class="container-cards">
+                    <div class="card-imagem"><legend>Manaus</legend></div>
+                    <div class="card-imagem"><legend>São Paulo</legend></div>
+                    <div class="card-imagem"><legend>Rio de janeiro</legend></div>
+                    <div class="card-imagem"><legend>Maranhão</legend></div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container-titulos">
+                <h2>Explore a natureza</h2>
+                <h3>Viaje conosco e veja o melhor que a natureza tem a oferecer</h3>
+            </div>
+             <div class="contianer_anuncios">
+                <div class="container-cards-50">
+                    <img src="img/lencol.jpg" alt="">
+                    <div>
+                        <h2>Lençois Maranhenses, Brasil.</h2>
+                        <p>Ida e volta a partir de R$79</p>
+                    </div>
+                </div>
+                <div class="container-cards-50">
+                    <img src="img/goias.jpg" alt="">
+                    <div>
+                        <h2>Cachoeira Santa Bárbara. Brasil</h2>
+                        <p>Ida e volta por R$139</p>
+                    </div>
+                </div>
+            </div>
+        </section>                      
+    </main>
+    <footer>
+        <div class="container-rodape">
+            <h1>Contato</h1>
+                <div>
+                    <img src="img/local.png" alt="">
+                    <span>Rio de Janeiro</span>
+                </div>
+                <div>
+                    <img src="img/telefone.png" alt="">
+                    <span>Telefone (21)9999-9999</span>
+                </div>
+                <div>
+                    <img src="img/email.png" alt="">
+                    <span>Email: contato@agencia.com.br</span>
+                </div>
+            
+        </div>
+        <div class="container-rodape">
+            <div>
+                <h1>Nas Redes Sociais</h1>
+                <div>
+                    <img src="img/" alt="">
+                    <span>/AgenciaDeViagem</span>
+                </div>
+                <div>
+                    <img src="" alt="">
+                    <span>@AgenciaDeViagem</span>
+                </div>
+                <div>
+                    <img src="" alt="">
+                    <span>@AgenciaDeViagem</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
