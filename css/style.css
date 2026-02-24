@@ -13,14 +13,27 @@ header{
     gap: 10px;
     display: flex;
     align-items: center;
-    justify-content: start;
+}
+.container_padrao{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1024px;
+    align-items: center;
+    margin: auto;
+    background-color: #fff;
+}
+.topo{
+    flex-direction: row;
 }
 header img{
-    height: 30px;
+    height: 32px;
+    width: 32px;
 }
 h1{
-    font-size: clamp(1rem, 1.5vw, 3rem);
-    font-weight: 600;
+    font-size: clamp(1.4rem, 1.5vw, 3rem);
+    font-weight: 400;
+    color: #6A1B9A;  
 }
 section:first-of-type{
     width: 100%;
@@ -50,7 +63,4 @@ section:first-of-type{
 }
 .topo-form img{
     height: 13px;
-}
-form{
-    width: 100%;
 }
