@@ -23,122 +23,124 @@
                     <img src="img/aviao.png" alt="">
                     <h2>Solicite um orçamento</h2>
                 </div>
-                <h2>Informe seus dados</h2>
-                    <form method="post" action="">
-                        <div class="container_dados_pessoais">
-                            <label for="nome">Nome</label>
-                            <input type="text" name="nome" id="nome" placeholder="Nome completo">
-                            <label for="email">Email</label>
-                            <input type="email" name="email" id="email" placeholder="Email para contato">
-                            <label for="celular">Celular</label>
-                            <input type="tel" name="celular" id="celular" placeholder="(XX) XXXXX-XXXX">
-                        </div>
-                        <div class="container_datas">
-                            <div>
-                                <label for="data_ida">Data de ida</label>
-                                <input type="date" name="data_ida" id="data_ida" placeholder="dd/mm/aaaa">
+                <div class="container-form">
+                    <h2>Informe seus dados</h2>
+                        <form method="post" action="">
+                            <div class="container_dados_pessoais">
+                                <label for="nome">Nome</label>
+                                <input type="text" name="nome" id="nome" placeholder="Nome completo">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email" placeholder="Email para contato">
+                                <label for="celular">Celular</label>
+                                <input type="tel" name="celular" id="celular" placeholder="(XX) XXXXX-XXXX">
                             </div>
-                             <div>
-                                <label for="data_volta">Data de volta</label>
-                                <input type="date" name="data_volta" id="data_volta" placeholder="dd/mm/aaaa">
+                            <div class="container_datas">
+                                <div>
+                                    <label for="data_ida">Data de ida</label>
+                                    <input type="date" name="data_ida" id="data_ida" placeholder="dd/mm/aaaa">
+                                </div>
+                                 <div>
+                                    <label for="data_volta">Data de volta</label>
+                                    <input type="date" name="data_volta" id="data_volta" placeholder="dd/mm/aaaa">
+                                </div>
                             </div>
-                        </div>
-                        <div class="container_destino">
-                            <div>
-                                <label for="origem">Destino</label>
-                                <select name="origem" id="origem" >
-                                    <optgroup label="Região Norte">
-                                        <option value="Acre">Acre (AC): Rio Branco</option>
-                                        <option value="Amapa">Amapá (AP): Macapá</option>
-                                        <option value="Amazonas">Amazonas (AM): Manaus</option>
-                                        <option value="Para">Pará (PA): Belém</option>
-                                        <option value="Rondonia">Rondônia (RO): Porto Velho</option>
-                                        <option value="Roraima">Roraima (RR): Boa Vista</option>
-                                        <option value="Tocantins">Tocantins (TO): Palmas </option>
-                                    </optgroup>
-                                    <optgroup label="Região Nordeste">
-                                        <option value="Alagoas">Alagoas (AL): Maceió</option>
-                                        <option value="Bahia">Bahia (BA): Salvador</option>
-                                        <option value="Ceara">Ceará (CE): Fortaleza</option>
-                                        <option value="Maranhao">Maranhão (MA): São Luís</option>
-                                        <option value="Paraiba">Paraíba (PB): João Pessoa</option>
-                                        <option value="Pernambuco">Pernambuco (PE): Recife</option>
-                                        <option value="Piauí">Piauí (PI): Teresina</option>
-                                        <option value="Rio_Grande_do_Norte">Rio Grande do Norte (RN): Natal</option>
-                                        <option value="Sergipe">Sergipe (SE): Aracaju </option>
-                                    </optgroup>
-                                    <optgroup label="Região Centro-Oeste">
-                                        <option value="Distrito_federal">Distrito Federal (DF): Brasília</option>
-                                        <option value="Goias">Goiás (GO): Goiânia</option>
-                                        <option value="Mato_grosso">Mato Grosso (MT): Cuiabá</option>
-                                        <option value="Mato_grosso_do_Sul">Mato Grosso do Sul (MS): Campo Grande</option>
-                                    </optgroup>
-                                    <optgroup label="Região Sudeste">
-                                        <option value="Espírito_santo">Espírito Santo (ES): Vitória</option>
-                                        <option value="Minas_gerais">Minas Gerais (MG): Belo Horizonte</option>
-                                        <option value="Rio_de_janeiro">Rio de Janeiro (RJ): Rio de Janeiro</option>
-                                        <option value="Sao_paulo">São Paulo (SP): São Paulo</option>
-                                    </optgroup>
-                                </select>
+                            <div class="container_trajeto">
+                                <div>
+                                    <label for="origem">Destino</label>
+                                    <select name="origem" id="origem" >
+                                        <optgroup label="Região Norte">
+                                            <option value="Acre">Acre (AC): Rio Branco</option>
+                                            <option value="Amapa">Amapá (AP): Macapá</option>
+                                            <option value="Amazonas">Amazonas (AM): Manaus</option>
+                                            <option value="Para">Pará (PA): Belém</option>
+                                            <option value="Rondonia">Rondônia (RO): Porto Velho</option>
+                                            <option value="Roraima">Roraima (RR): Boa Vista</option>
+                                            <option value="Tocantins">Tocantins (TO): Palmas </option>
+                                        </optgroup>
+                                        <optgroup label="Região Nordeste">
+                                            <option value="Alagoas">Alagoas (AL): Maceió</option>
+                                            <option value="Bahia">Bahia (BA): Salvador</option>
+                                            <option value="Ceara">Ceará (CE): Fortaleza</option>
+                                            <option value="Maranhao">Maranhão (MA): São Luís</option>
+                                            <option value="Paraiba">Paraíba (PB): João Pessoa</option>
+                                            <option value="Pernambuco">Pernambuco (PE): Recife</option>
+                                            <option value="Piauí">Piauí (PI): Teresina</option>
+                                            <option value="Rio_Grande_do_Norte">Rio Grande do Norte (RN): Natal</option>
+                                            <option value="Sergipe">Sergipe (SE): Aracaju </option>
+                                        </optgroup>
+                                        <optgroup label="Região Centro-Oeste">
+                                            <option value="Distrito_federal">Distrito Federal (DF): Brasília</option>
+                                            <option value="Goias">Goiás (GO): Goiânia</option>
+                                            <option value="Mato_grosso">Mato Grosso (MT): Cuiabá</option>
+                                            <option value="Mato_grosso_do_Sul">Mato Grosso do Sul (MS): Campo Grande</option>
+                                        </optgroup>
+                                        <optgroup label="Região Sudeste">
+                                            <option value="Espírito_santo">Espírito Santo (ES): Vitória</option>
+                                            <option value="Minas_gerais">Minas Gerais (MG): Belo Horizonte</option>
+                                            <option value="Rio_de_janeiro">Rio de Janeiro (RJ): Rio de Janeiro</option>
+                                            <option value="Sao_paulo">São Paulo (SP): São Paulo</option>
+                                        </optgroup>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="origem">Destino</label>
+                                    <select name="origem" id="origem" >
+                                        <optgroup label="Região Norte">
+                                            <option value="Acre">Acre (AC): Rio Branco</option>
+                                            <option value="Amapa">Amapá (AP): Macapá</option>
+                                            <option value="Amazonas">Amazonas (AM): Manaus</option>
+                                            <option value="Para">Pará (PA): Belém</option>
+                                            <option value="Rondonia">Rondônia (RO): Porto Velho</option>
+                                            <option value="Roraima">Roraima (RR): Boa Vista</option>
+                                            <option value="Tocantins">Tocantins (TO): Palmas </option>
+                                        </optgroup>
+                                        <optgroup label="Região Nordeste">
+                                            <option value="Alagoas">Alagoas (AL): Maceió</option>
+                                            <option value="Bahia">Bahia (BA): Salvador</option>
+                                            <option value="Ceara">Ceará (CE): Fortaleza</option>
+                                            <option value="Maranhao">Maranhão (MA): São Luís</option>
+                                            <option value="Paraiba">Paraíba (PB): João Pessoa</option>
+                                            <option value="Pernambuco">Pernambuco (PE): Recife</option>
+                                            <option value="Piauí">Piauí (PI): Teresina</option>
+                                            <option value="Rio_Grande_do_Norte">Rio Grande do Norte (RN): Natal</option>
+                                            <option value="Sergipe">Sergipe (SE): Aracaju </option>
+                                        </optgroup>
+                                        <optgroup label="Região Centro-Oeste">
+                                            <option value="Distrito_federal">Distrito Federal (DF): Brasília</option>
+                                            <option value="Goias">Goiás (GO): Goiânia</option>
+                                            <option value="Mato_grosso">Mato Grosso (MT): Cuiabá</option>
+                                            <option value="Mato_grosso_do_Sul">Mato Grosso do Sul (MS): Campo Grande</option>
+                                        </optgroup>
+                                        <optgroup label="Região Sudeste">
+                                            <option value="Espírito_santo">Espírito Santo (ES): Vitória</option>
+                                            <option value="Minas_gerais">Minas Gerais (MG): Belo Horizonte</option>
+                                            <option value="Rio_de_janeiro">Rio de Janeiro (RJ): Rio de Janeiro</option>
+                                            <option value="Sao_paulo">São Paulo (SP): São Paulo</option>
+                                        </optgroup>
+                                    </select>
+                                </div>
                             </div>
-                            <div>
-                                <label for="origem">Destino</label>
-                                <select name="origem" id="origem" >
-                                    <optgroup label="Região Norte">
-                                        <option value="Acre">Acre (AC): Rio Branco</option>
-                                        <option value="Amapa">Amapá (AP): Macapá</option>
-                                        <option value="Amazonas">Amazonas (AM): Manaus</option>
-                                        <option value="Para">Pará (PA): Belém</option>
-                                        <option value="Rondonia">Rondônia (RO): Porto Velho</option>
-                                        <option value="Roraima">Roraima (RR): Boa Vista</option>
-                                        <option value="Tocantins">Tocantins (TO): Palmas </option>
-                                    </optgroup>
-                                    <optgroup label="Região Nordeste">
-                                        <option value="Alagoas">Alagoas (AL): Maceió</option>
-                                        <option value="Bahia">Bahia (BA): Salvador</option>
-                                        <option value="Ceara">Ceará (CE): Fortaleza</option>
-                                        <option value="Maranhao">Maranhão (MA): São Luís</option>
-                                        <option value="Paraiba">Paraíba (PB): João Pessoa</option>
-                                        <option value="Pernambuco">Pernambuco (PE): Recife</option>
-                                        <option value="Piauí">Piauí (PI): Teresina</option>
-                                        <option value="Rio_Grande_do_Norte">Rio Grande do Norte (RN): Natal</option>
-                                        <option value="Sergipe">Sergipe (SE): Aracaju </option>
-                                    </optgroup>
-                                    <optgroup label="Região Centro-Oeste">
-                                        <option value="Distrito_federal">Distrito Federal (DF): Brasília</option>
-                                        <option value="Goias">Goiás (GO): Goiânia</option>
-                                        <option value="Mato_grosso">Mato Grosso (MT): Cuiabá</option>
-                                        <option value="Mato_grosso_do_Sul">Mato Grosso do Sul (MS): Campo Grande</option>
-                                    </optgroup>
-                                    <optgroup label="Região Sudeste">
-                                        <option value="Espírito_santo">Espírito Santo (ES): Vitória</option>
-                                        <option value="Minas_gerais">Minas Gerais (MG): Belo Horizonte</option>
-                                        <option value="Rio_de_janeiro">Rio de Janeiro (RJ): Rio de Janeiro</option>
-                                        <option value="Sao_paulo">São Paulo (SP): São Paulo</option>
-                                    </optgroup>
-                                </select>
+                            <div class="contianer_radio">
+                                <label for="">Quarto com cama infantil?</label>
+                                <input type="radio" name="cama_infantil" id="cama_infantil" value="sim">
+                                <label for="cama_infantil">Sim</label>
+                                <input type="radio" name="cama_infantil" id="cama_infantil" value="nao">
+                                <label for="cama_infantil">Não</label>
                             </div>
-                        </div>
-                        <div class="contianer_radio">
-                            <label for="">Quarto com cama infantil?</label>
-                            <input type="radio" name="cama_infantil" id="cama_infantil" value="sim">
-                            <label for="cama_infantil">Sim</label>
-                            <input type="radio" name="cama_infantil" id="cama_infantil" value="nao">
-                            <label for="cama_infantil">Não</label>
-                        </div>
-                        <div class="contianer_checkbox">
-                            <label for="">Preferências da hospedagem</label>
-                            <input type="checkbox" name="" id="">
-                            <label for="">Piscina</label>
-                            <input type="checkbox" name="" id="">
-                            <label for="">Wi-fi</label>
-                            <input type="checkbox" name="" id="">
-                            <label for="">Garagem</label>
-                            <input type="checkbox" name="" id="">
-                            <label for="">Suite</label>
-                        </div>
-                        <button type="submit">Solicitar orçamento</button>
-                    </form>
+                            <div class="contianer_checkbox">
+                                <label for="">Preferências da hospedagem</label>
+                                <input type="checkbox" name="" id="">
+                                <label for="">Piscina</label>
+                                <input type="checkbox" name="" id="">
+                                <label for="">Wi-fi</label>
+                                <input type="checkbox" name="" id="">
+                                <label for="">Garagem</label>
+                                <input type="checkbox" name="" id="">
+                                <label for="">Suite</label>
+                            </div>
+                            <button type="submit">Solicitar orçamento</button>
+                        </form>
+                </div>
             </div>
         </section>
         <section>
