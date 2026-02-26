@@ -2,17 +2,26 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    background-color: #fff;
+    font-family: 'Raleway', sans-serif;
+
 }
 
-header{
-    height: 10vh;
+h1{
+    font-size: clamp(1.4rem, 1.5vw, 3rem);
+    font-weight: 400;
+    color: #6A1B9A;  
+}
+
+section:first-of-type{
     width: 100%;
-    padding: 20px 10px;
-    gap: 10px;
-    display: flex;
-    align-items: center;
+    background-image: url(../img/bahia.jpg);
+    background-size: cover;
+    padding: 50px;
+}
+section{
+    width: 100%;
+    background-color: #80808029;
+    padding: 50px;
 }
 .container_padrao{
     display: flex;
@@ -20,9 +29,20 @@ header{
     width: 100%;
     max-width: 1024px;
     align-items: center;
-    margin: auto;
+    margin: 0 auto ;
+}
+
+/* Estilo header -- INÍCIO -- */
+header{
+    height: 10vh;
+    width: 100%;
+    padding: 20px 10px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
     background-color: #fff;
 }
+
 .topo{
     flex-direction: row;
 }
@@ -30,17 +50,9 @@ header img{
     height: 32px;
     width: 32px;
 }
-h1{
-    font-size: clamp(1.4rem, 1.5vw, 3rem);
-    font-weight: 400;
-    color: #6A1B9A;  
-}
-section:first-of-type{
-    width: 100%;
-    background-image: url(../img/bahia.jpg);
-    background-size: cover;
-    padding: 50px;
-}
+/* Estilo header -- FIM -- */
+
+/* Estilo sessão e formulário INÍCIO */
 .topo-form{
     width: 100%;
     height: 35px;
@@ -67,23 +79,87 @@ section:first-of-type{
     width: 100%;
     padding: 30px 25px 20px 25px;
     box-sizing: border-box;
+    background-color: #fff;
 }
 .container-form h2{
     font-size: 22px;
     font-weight: 500;
     margin: 0 0 24px 0;
 }
+label {
+    font-size: 16px;
+}
+input, select{
+    height: 20px;
+    margin: 8px 0;
+    padding: 0 5px;
+}
 .container_dados_pessoais{
     display: flex;
     flex-direction: column;
     width: 100%;
 }
-.container_datas, .container_trajeto{
+.container_datas{
     display: flex;
+    flex-direction: column;
 }
 .container_dados_pessoais input{
     max-width: 100%;
+    padding: 0 3px;
+
 }
-.container_datas input{
-   max-width: 50%;
+.container_datas select{
+   max-width: 100%;
+   padding: 0 3px;
+}
+.container-select, .contianer-date{
+    display: flex;
+    flex-direction: column;
+}
+.contianer_radio, .contianer_checkbox{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.opcoes{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.opcoes div{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.opcoes input{
+    width: 15px;
+}
+button{
+    font-size: 16px;
+    width: 100%;
+    height: 32px;
+    margin: 12px 0 0 0;
+    background-color: #5d15d1;
+    color: #fff;
+    border: none;
+}
+
+/* Estilo sessão e formulário FIM */
+
+/* Estilo sessão ofertas */
+.ofertas{
+    align-items: start;
+}
+.titulos {
+    text-align: left;
+    align-items: start;
+}
+.titulos h2 {
+    font-size: clamp(1.2rem, 1.4vw, 3rem);
+    margin: 0 0 10px 0;
+    
+}
+.titulos h3{
+    font-size: clamp(0.1rem, 1.4vw, 3rem);
+    font-weight: 400;
 }

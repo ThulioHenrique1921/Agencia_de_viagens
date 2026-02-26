@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agência de viagens</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&amp;display=swap">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -35,18 +33,18 @@
                                 <input type="tel" name="celular" id="celular" placeholder="(XX) XXXXX-XXXX">
                             </div>
                             <div class="container_datas">
-                                <div>
+                                <div class="contianer-date">
                                     <label for="data_ida">Data de ida</label>
                                     <input type="date" name="data_ida" id="data_ida" placeholder="dd/mm/aaaa">
                                 </div>
-                                 <div>
+                                 <div class="contianer-date">
                                     <label for="data_volta">Data de volta</label>
                                     <input type="date" name="data_volta" id="data_volta" placeholder="dd/mm/aaaa">
                                 </div>
                             </div>
-                            <div class="container_trajeto">
-                                <div>
-                                    <label for="origem">Destino</label>
+                            <div class="container_datas">
+                                <div class="container-select">
+                                    <label for="origem">Origem</label>
                                     <select name="origem" id="origem" >
                                         <optgroup label="Região Norte">
                                             <option value="Acre">Acre (AC): Rio Branco</option>
@@ -82,9 +80,9 @@
                                         </optgroup>
                                     </select>
                                 </div>
-                                <div>
-                                    <label for="origem">Destino</label>
-                                    <select name="origem" id="origem" >
+                                <div class="container-select">
+                                    <label for="destino">Destino</label>
+                                    <select name="destino" id="destino" >
                                         <optgroup label="Região Norte">
                                             <option value="Acre">Acre (AC): Rio Branco</option>
                                             <option value="Amapa">Amapá (AP): Macapá</option>
@@ -120,23 +118,39 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="contianer_radio">
-                                <label for="">Quarto com cama infantil?</label>
-                                <input type="radio" name="cama_infantil" id="cama_infantil" value="sim">
-                                <label for="cama_infantil">Sim</label>
-                                <input type="radio" name="cama_infantil" id="cama_infantil" value="nao">
-                                <label for="cama_infantil">Não</label>
+                            <div class="contianer_radio">                                
+                                <p>Quarto com cama infantil?</p>                                
+                                <div class="opcoes">
+                                    <div>
+                                        <input type="radio" name="cama_infantil" id="opcao_sim" value="sim">
+                                        <label for="opcao_sim">Sim</label>
+                                    </div>                                                     
+                                    <div>
+                                        <input type="radio" name="cama_infantil" id="opcao_nao" value="nao">
+                                        <label for="opcao_nao">Não</label>
+                                    </div>
+                                </div>
                             </div>
                             <div class="contianer_checkbox">
-                                <label for="">Preferências da hospedagem</label>
-                                <input type="checkbox" name="" id="">
-                                <label for="">Piscina</label>
-                                <input type="checkbox" name="" id="">
-                                <label for="">Wi-fi</label>
-                                <input type="checkbox" name="" id="">
-                                <label for="">Garagem</label>
-                                <input type="checkbox" name="" id="">
-                                <label for="">Suite</label>
+                                <p> Preferências da hospedagem </p>                                
+                                <div class="opcoes">
+                                    <div>
+                                        <input type="checkbox" name="piscina" id="piscina">
+                                        <label for="piscina">Piscina</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" name="wifi" id="wifi">
+                                        <label for="wifi">Wi-fi</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" name="garagem" id="garagem">
+                                        <label for="garagem">Garagem</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" name="suite" id="suite">
+                                        <label for="suite">Suite</label>
+                                    </div>
+                                </div>                             
                             </div>
                             <button type="submit">Solicitar orçamento</button>
                         </form>
@@ -144,19 +158,21 @@
             </div>
         </section>
         <section>
-            <div class="container_padrao titulos">
-                <h2>Ofertas</h2>
-                <h3>Ofertas com até 50% de desconto</h3>
-            </div>
-            <div class="contianer_ofertas">
-                <div class="container-cards-50">
-                    <legend>Rio de janeiro</legend>
+            <div class="container_padrao ofertas">
+                <div class="titulos">
+                    <h2>Ofertas</h2>
+                    <h3>Ofertas com até <strong>50%</strong> de desconto</h3>
                 </div>
-                <div class="container-cards">
-                    <div class="card-imagem"><legend>Manaus</legend></div>
-                    <div class="card-imagem"><legend>São Paulo</legend></div>
-                    <div class="card-imagem"><legend>Rio de janeiro</legend></div>
-                    <div class="card-imagem"><legend>Maranhão</legend></div>
+                <div class="contianer_ofertas">
+                    <div class="container-cards-50">
+                        <legend>Rio de janeiro</legend>
+                    </div>
+                    <div class="container-cards">
+                        <div class="card-imagem"><legend>Manaus</legend></div>
+                        <div class="card-imagem"><legend>São Paulo</legend></div>
+                        <div class="card-imagem"><legend>Rio de janeiro</legend></div>
+                        <div class="card-imagem"><legend>Maranhão</legend></div>
+                    </div>
                 </div>
             </div>
         </section>
