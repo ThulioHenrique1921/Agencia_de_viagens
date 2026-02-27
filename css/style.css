@@ -188,7 +188,7 @@ button{
 }
 .container-cards-50{
     width: 100%;
-
+    position: relative;
 }
 .container-cards-50 img{
     width: 100%;
