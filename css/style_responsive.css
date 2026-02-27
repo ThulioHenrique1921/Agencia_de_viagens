@@ -70,7 +70,10 @@
         height: 100%;
     }
     .card-imagem legend{
-    bottom: 1px;    
+        bottom: 23px;    
+    }
+    .container-cards-50 legend{
+        bottom: -1px;
     }
     .container-anuncios{
         flex-direction: row;

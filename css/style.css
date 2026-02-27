@@ -114,7 +114,6 @@ input, select{
     width: 100%; 
     max-width: 100%;
     padding: 0 3px;
-
 }
 .container_datas select{
    width: 100%; 
@@ -199,7 +198,7 @@ button{
 }
 .card-imagem{
     width: 100%;
-    position: relative;
+    
 }
 .card-imagem img{
     width: 100%;
@@ -209,7 +208,7 @@ button{
 .card-imagem legend{
     background-color: #000000;
     color: #fff;
-    position: absolute;
+    position: relative;
     bottom: 4px;
     width: 100%;
     padding: 2px 4px;
