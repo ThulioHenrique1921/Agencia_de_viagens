@@ -1,13 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+box-sizing: border-box;
+}
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
-
+    background-color: #fff;
 }
-
+html{
+    padding: 0;
+}
 h1{
-    font-size: clamp(1.4rem, 1.5vw, 3rem);
+    font-size: clamp(1.2rem, 1.2vw, 2rem);
     font-weight: 400;
     color: #6A1B9A;  
 }
@@ -27,14 +34,14 @@ section{
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 1024px;
+    max-width: 500px;
     align-items: center;
     margin: 0 auto ;
 }
 
 /* Estilo header -- INÍCIO -- */
 header{
-    height: 10vh;
+    min-height: 10vh;
     width: 100%;
     padding: 20px 10px;
     gap: 10px;
@@ -45,6 +52,7 @@ header{
 
 .topo{
     flex-direction: row;
+    margin: auto;
 }
 header img{
     height: 32px;
@@ -146,9 +154,10 @@ button{
 
 /* Estilo sessão e formulário FIM */
 
-/* Estilo sessão ofertas */
+/* Estilo sessão ofertas INICIO*/
 .ofertas{
     align-items: start;
+    
 }
 .titulos {
     text-align: left;
@@ -160,6 +169,154 @@ button{
     
 }
 .titulos h3{
-    font-size: clamp(0.1rem, 1.4vw, 3rem);
+    font-size: clamp(1rem, 1.4vw, 3rem);
     font-weight: 400;
 }
+.contianer_ofertas{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.container-cards{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.container-cards-50{
+    width: 100%;
+    height: 20vh;
+    margin-bottom: 10px;
+    background-image: url(../img/rio.jpg);
+    background-size: cover;
+    position: relative;
+}
+.container-cards-50::after{
+    content: "Rio de janeiro";
+    position: absolute;
+    bottom: 0;
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    padding: 4px 6px;
+    opacity: 0.6;
+    box-sizing: border-box;
+}
+.container-cards div:nth-of-type(1){
+    width: 100%;
+    height: 20vh;
+    background-image: url(../img/manaus.jpg);
+    background-size: cover;
+    position: relative;
+    
+}
+.container-cards div:nth-of-type(2){
+    width: 100%;
+    height: 20vh;
+    background-image: url(../img/niteroi.jpg);
+    background-size: cover;
+    position: relative;
+}
+.container-cards div:nth-of-type(3){
+    width: 100%;
+    height: 20vh;
+    background-image: url(../img/saopaulo.jpg);
+    background-size: cover;
+    position: relative;
+}
+.container-cards div:nth-of-type(4){
+    width: 100%;
+    height: 20vh;
+    background-image: url(../img/maranhao.jpg);
+    background-size: cover;
+    position: relative;
+}
+.container-cards div:nth-of-type(1)::after{
+    content: "Manaus";
+    position: absolute;
+    bottom: 0;
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    padding: 4px 6px;
+    opacity: 0.6;
+    box-sizing: border-box;
+}
+.container-cards div:nth-of-type(2)::after{
+    content: "Rio de janeiro";
+    position: absolute;
+    bottom: 0;
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    padding: 4px 6px;
+    opacity: 0.6;
+    box-sizing: border-box;
+}
+.container-cards div:nth-of-type(3)::after{
+    content: "São Paulo";
+    position: absolute;
+    bottom: 0;
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    padding: 4px 6px;
+    opacity: 0.6;
+    box-sizing: border-box;
+}
+.container-cards div:nth-of-type(4)::after{
+    content: "Rio de janeiro";
+    position: absolute;
+    bottom: 0;
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    padding: 4px 6px;
+    opacity: 0.6;
+    box-sizing: border-box;
+}
+
+/* Estilo sessão ofertas FIM*/
+
+/* Estilo sessão anuncios INICIO*/
+section:nth-of-type(3){
+    background-color: #80808029;
+    min-height: 100vh;
+}
+.container_anuncios{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.container-card-anuncio{
+    width: 100%; 
+    margin: auto;
+    display: flex;    
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+}
+.container-card-anuncio img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container-card-anuncio h2{
+    font-size: 16px;
+    margin: 0 0 10px
+}
+.container-card-anuncio p{
+    font-size: 12px
+}
+.conteudo{
+    background-color: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+}
+/* Estilo Footer INICIO */
+
+footer{
+    height: 50vh;
+}
+
