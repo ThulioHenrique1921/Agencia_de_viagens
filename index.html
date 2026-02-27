@@ -6,6 +6,7 @@
     <title>Agência de viagens</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&amp;display=swap">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_responsive.css">
 </head>
 <body>
     <header>
@@ -23,29 +24,29 @@
                 </div>
                 <div class="container-form">
                     <h2>Informe seus dados</h2>
-                        <form method="post" action="">
+                        <form method="post" action="https://www.devmedia.com.br/codigos/missao/front-end/agencia-de-viagens/">
                             <div class="container_dados_pessoais">
                                 <label for="nome">Nome</label>
-                                <input type="text" name="nome" id="nome" placeholder="Nome completo">
+                                <input type="text" name="nome" id="nome" placeholder="Nome completo" required>
                                 <label for="email">Email</label>
-                                <input type="email" name="email" id="email" placeholder="Email para contato">
+                                <input type="email" name="email" id="email" placeholder="Email para contato" required>
                                 <label for="celular">Celular</label>
-                                <input type="tel" name="celular" id="celular" placeholder="(XX) XXXXX-XXXX">
+                                <input type="tel" name="celular" id="celular" placeholder="(XX) XXXXX-XXXX" required>
                             </div>
                             <div class="container_datas">
-                                <div class="contianer-date">
+                                <div class="container-date">
                                     <label for="data_ida">Data de ida</label>
-                                    <input type="date" name="data_ida" id="data_ida" placeholder="dd/mm/aaaa">
+                                    <input type="date" name="data_ida" id="data_ida" placeholder="dd/mm/aaaa"required>
                                 </div>
-                                 <div class="contianer-date">
+                                 <div class="container-date">
                                     <label for="data_volta">Data de volta</label>
-                                    <input type="date" name="data_volta" id="data_volta" placeholder="dd/mm/aaaa">
+                                    <input type="date" name="data_volta" id="data_volta" placeholder="dd/mm/aaaa" required>
                                 </div>
                             </div>
                             <div class="container_datas">
                                 <div class="container-select">
                                     <label for="origem">Origem</label>
-                                    <select name="origem" id="origem" >
+                                    <select name="origem" id="origem" required >
                                         <optgroup label="Região Norte">
                                             <option value="Acre">Acre (AC): Rio Branco</option>
                                             <option value="Amapa">Amapá (AP): Macapá</option>
@@ -82,7 +83,7 @@
                                 </div>
                                 <div class="container-select">
                                     <label for="destino">Destino</label>
-                                    <select name="destino" id="destino" >
+                                    <select name="destino" id="destino" required>
                                         <optgroup label="Região Norte">
                                             <option value="Acre">Acre (AC): Rio Branco</option>
                                             <option value="Amapa">Amapá (AP): Macapá</option>
@@ -118,7 +119,7 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="contianer_radio">                                
+                            <div class="container_radio">                                
                                 <p>Quarto com cama infantil?</p>                                
                                 <div class="opcoes">
                                     <div>
@@ -131,7 +132,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="contianer_checkbox">
+                            <div class="container_checkbox">
                                 <p> Preferências da hospedagem </p>                                
                                 <div class="opcoes">
                                     <div>
@@ -163,14 +164,28 @@
                     <h2>Ofertas</h2>
                     <h3>Ofertas com até <strong>50%</strong> de desconto</h3>
                 </div>
-                <div class="contianer_ofertas">
+                <div class="container_ofertas">
                     <div class="container-cards-50">
+                        <img src="img/rio.jpg" alt="">
+                        <legend>Rio de Janeiro</legend>
                     </div>
                     <div class="container-cards">
-                        <div class="card-imagem"></div>
-                        <div class="card-imagem"></div>
-                        <div class="card-imagem"></div>
-                        <div class="card-imagem"></div>
+                        <div class="card-imagem">
+                            <img src="img/manaus.jpg" alt="">
+                            <legend>Manaus</legend>
+                        </div>
+                        <div class="card-imagem">
+                            <img src="img/saopaulo.jpg" alt="">
+                            <legend>São Paulo</legend>
+                        </div>
+                        <div class="card-imagem">
+                            <img src="img/niteroi.jpg" alt="">
+                            <legend>Rio de janeiro</legend>
+                        </div>
+                        <div class="card-imagem">
+                            <img src="img/maranhao.jpg" alt="">
+                            <legend>Maranhão</legend>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -181,17 +196,17 @@
                     <h2>Explore a natureza</h2>
                     <h3>Viaje conosco e veja o melhor que a natureza tem a oferecer</h3>
                 </div>
-                 <div class="container-card-anuncio">
-                    <div class="container-card-anuncio">
-                        <div class="container-card-anuncio imagem"><img src="img/lencol.jpg" alt=""></div>
-                        <div class="container-card-anuncio conteudo">
+                 <div class="container-anuncios">
+                    <div class="card-anuncio">
+                        <div class=""><img src="img/lencol.jpg" alt=""></div>
+                        <div class="card-anuncio-conteudo">
                             <h2>Lençois Maranhenses, Brasil.</h2>
                             <p>Ida e volta a partir de R$79</p>
                         </div>
                     </div>
-                    <div class="container-card-anuncio">
+                    <div class="card-anuncio">
                         <img src="img/goias.jpg" alt="">
-                        <div class="container-card-anuncio conteudo">
+                        <div class="card-anuncio-conteudo">
                             <h2>Cachoeira Santa Bárbara. Brasil</h2>
                             <p>Ida e volta por R$139</p>
                         </div>
@@ -201,36 +216,39 @@
         </section>                      
     </main>
     <footer>
-        <div class="container_padrao rodape">
-            <h1>Contato</h1>
+        <div class="container_padrao">
+            <div class="conteudo-rodape">
+                <h1>Contato</h1>
                 <div>
                     <img src="img/local.png" alt="">
-                    <span>Rio de Janeiro</span>
+                    <span>Rio de Janeiro RJ</span>
                 </div>
                 <div>
                     <img src="img/telefone.png" alt="">
-                    <span>Telefone (21)9999-9999</span>
+                    <span>Telefone: (21) 9999-9999</span>
                 </div>
                 <div>
                     <img src="img/email.png" alt="">
                     <span>Email: contato@agencia.com.br</span>
                 </div>
-            
+            </div>
         </div>
-        <div class="container_padrao rodape">
-            <div>
-                <h1>Nas Redes Sociais</h1>
-                <div>
-                    <img src="img/" alt="">
-                    <span>/AgenciaDeViagem</span>
-                </div>
-                <div>
-                    <img src="" alt="">
-                    <span>@AgenciaDeViagem</span>
-                </div>
-                <div>
-                    <img src="" alt="">
-                    <span>@AgenciaDeViagem</span>
+        <div class="container_padrao">
+            <div class="conteudo-rodape">
+                <h1>Contato</h1>
+                <div class="container-rodape">                    
+                    <div>
+                        <img src="img/local.png" alt="">
+                        <span>/AgenciaDeViagem</span>
+                    </div>
+                    <div>
+                        <img src="img/telefone.png" alt="">
+                        <span>@AgenciaDeViagem</span>
+                    </div>
+                    <div>
+                        <img src="img/email.png" alt="">
+                        <span>@AgenciaDeViagem</span>
+                    </div>
                 </div>
             </div>
         </div>

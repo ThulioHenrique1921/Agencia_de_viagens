@@ -14,7 +14,7 @@ html{
     padding: 0;
 }
 h1{
-    font-size: clamp(1.2rem, 1.2vw, 2rem);
+    font-size: clamp(1rem, 1.2vw, 2rem);
     font-weight: 400;
     color: #6A1B9A;  
 }
@@ -23,12 +23,11 @@ section:first-of-type{
     width: 100%;
     background-image: url(../img/bahia.jpg);
     background-size: cover;
-    padding: 50px;
 }
 section{
     width: 100%;
     background-color: #80808029;
-    padding: 50px;
+    padding: 20px;
 }
 .container_padrao{
     display: flex;
@@ -41,9 +40,9 @@ section{
 
 /* Estilo header -- INÍCIO -- */
 header{
-    min-height: 10vh;
+    
     width: 100%;
-    padding: 20px 10px;
+    padding: 10px;
     gap: 10px;
     display: flex;
     align-items: center;
@@ -55,8 +54,8 @@ header{
     margin: auto;
 }
 header img{
-    height: 32px;
-    width: 32px;
+    height: 25px;
+    width: 25px;
 }
 /* Estilo header -- FIM -- */
 
@@ -112,19 +111,21 @@ input, select{
     flex-direction: column;
 }
 .container_dados_pessoais input{
+    width: 100%; 
     max-width: 100%;
     padding: 0 3px;
 
 }
 .container_datas select{
+   width: 100%; 
    max-width: 100%;
    padding: 0 3px;
 }
-.container-select, .contianer-date{
+.container-select, .container-date{
     display: flex;
     flex-direction: column;
 }
-.contianer_radio, .contianer_checkbox{
+.container_radio, .container_checkbox{
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -155,9 +156,12 @@ button{
 /* Estilo sessão e formulário FIM */
 
 /* Estilo sessão ofertas INICIO*/
-.ofertas{
+.ofertas, .anuncios {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     align-items: start;
-    
+    gap: 15px;
 }
 .titulos {
     text-align: left;
@@ -172,110 +176,54 @@ button{
     font-size: clamp(1rem, 1.4vw, 3rem);
     font-weight: 400;
 }
-.contianer_ofertas{
+.container_ofertas{
     width: 100%;
     display: flex;
     flex-direction: column;
-    
+    gap: 8px;
 }
 .container-cards{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
 }
 .container-cards-50{
     width: 100%;
-    height: 20vh;
-    margin-bottom: 10px;
-    background-image: url(../img/rio.jpg);
-    background-size: cover;
     position: relative;
-}
-.container-cards-50::after{
-    content: "Rio de janeiro";
-    position: absolute;
-    bottom: 0;
-    background-color: #000;
-    color: #fff;
-    width: 100%;
-    padding: 4px 6px;
-    opacity: 0.6;
-    box-sizing: border-box;
-}
-.container-cards div:nth-of-type(1){
-    width: 100%;
-    height: 20vh;
-    background-image: url(../img/manaus.jpg);
-    background-size: cover;
-    position: relative;
-    
-}
-.container-cards div:nth-of-type(2){
-    width: 100%;
-    height: 20vh;
-    background-image: url(../img/niteroi.jpg);
-    background-size: cover;
-    position: relative;
-}
-.container-cards div:nth-of-type(3){
-    width: 100%;
-    height: 20vh;
-    background-image: url(../img/saopaulo.jpg);
-    background-size: cover;
-    position: relative;
-}
-.container-cards div:nth-of-type(4){
-    width: 100%;
-    height: 20vh;
-    background-image: url(../img/maranhao.jpg);
-    background-size: cover;
-    position: relative;
-}
-.container-cards div:nth-of-type(1)::after{
-    content: "Manaus";
-    position: absolute;
-    bottom: 0;
-    background-color: #000;
-    color: #fff;
-    width: 100%;
-    padding: 4px 6px;
-    opacity: 0.6;
-    box-sizing: border-box;
-}
-.container-cards div:nth-of-type(2)::after{
-    content: "Rio de janeiro";
-    position: absolute;
-    bottom: 0;
-    background-color: #000;
-    color: #fff;
-    width: 100%;
-    padding: 4px 6px;
-    opacity: 0.6;
-    box-sizing: border-box;
-}
-.container-cards div:nth-of-type(3)::after{
-    content: "São Paulo";
-    position: absolute;
-    bottom: 0;
-    background-color: #000;
-    color: #fff;
-    width: 100%;
-    padding: 4px 6px;
-    opacity: 0.6;
-    box-sizing: border-box;
-}
-.container-cards div:nth-of-type(4)::after{
-    content: "Rio de janeiro";
-    position: absolute;
-    bottom: 0;
-    background-color: #000;
-    color: #fff;
-    width: 100%;
-    padding: 4px 6px;
-    opacity: 0.6;
-    box-sizing: border-box;
-}
 
+}
+.container-cards-50 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card-imagem{
+    width: 100%;
+    position: relative;
+}
+.card-imagem img{
+    width: 100%;
+    object-fit: cover;
+
+}
+.card-imagem legend{
+    background-color: #000000;
+    color: #fff;
+    position: absolute;
+    bottom: 4px;
+    width: 100%;
+    padding: 2px 4px;
+    opacity: 0.8;
+}
+.container-cards-50 legend{
+    background-color: #000000;
+    color: #fff;
+    position: absolute;
+    bottom: 4px;
+    width: 100%;
+    padding: 2px 4px;
+    opacity: 0.8;
+}
 /* Estilo sessão ofertas FIM*/
 
 /* Estilo sessão anuncios INICIO*/
@@ -283,40 +231,73 @@ section:nth-of-type(3){
     background-color: #80808029;
     min-height: 100vh;
 }
-.container_anuncios{
+
+.container-anuncios{
     width: 100%;
     display: flex;
-    flex-direction: column;
-    gap: 20px;
+    flex-direction: column;    
+    gap: 15px;
 }
-.container-card-anuncio{
-    width: 100%; 
-    margin: auto;
-    display: flex;    
+.card-anuncio{
+    width: 100%;
+    padding: 0;
+    display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    background-color: #fff;
 }
-.container-card-anuncio img{
+.card-anuncio img{
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    display: block;
 }
-.container-card-anuncio h2{
-    font-size: 16px;
-    margin: 0 0 10px
-}
-.container-card-anuncio p{
-    font-size: 12px
-}
-.conteudo{
+.card-anuncio-conteudo{
+    width: 100%;
+    
     background-color: #fff;
-    padding: 10px;
+    padding: 20px;
     box-sizing: border-box;
+}
+.card-anuncio-conteudo h2{
+    font-size: clamp(0.8rem, 1.2vw, 1rem);
+}
+.card-anuncio-conteudo p{
+    font-size: clamp(0.7rem, 1.1vw, 1rem);
 }
 /* Estilo Footer INICIO */
 
 footer{
-    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    background-color: #5d15d1;
+    padding: 20px 30px;
 }
-
+footer h1{
+    font-size: clamp(1rem, 1.2vw, 1rem);
+    color: #fff;
+    font-weight: 600;
+}
+footer span{
+    font-size: clamp(0.8rem, 1.2vw, 1rem);
+    color: #fff;
+}
+.conteudo-rodape{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 205px;
+}
+.conteudo-rodape div{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+}
+.conteudo-rodape img{
+    width: 18px;
+    height: 18px;
+    
+}
+.container-rodape{
+    display: flex;
+    flex-direction: column;
+}
